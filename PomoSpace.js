@@ -76,6 +76,7 @@ container.addEventListener('click', (event) => {
             if (timerOn && missionSelected) {
                 if (current === "Pomodoro") {
                     document.getElementsByClassName('mainImage')[0].src = 'crash.png';
+                    rocketlaunchsound();
                 }
                 soundtwo();
                 event.target.style.backgroundColor = 'rgb(185, 5, 5)';
