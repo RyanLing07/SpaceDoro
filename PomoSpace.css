@@ -2,6 +2,7 @@ body {
   margin-top: 5vh;
   margin-left: 0;
   background-color: black;
+  transition: background-color 3s ease;
 }
 
 #start:hover { background-color: rgb(229, 82, 82); }
