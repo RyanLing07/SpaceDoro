@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            PomoSpace Two!
+        </title>
+        <link rel = "stylesheet" href = "PomoSpace.css">
+    </head>
+    <body id = "body">
+        <div style = "display: flex; margin: 0px 0px;">
+            <!-- IMAGE -->
+            <div style = "flex-direction: row; display: flex; justify-content: center; align-items: center; width: 100%;">
+                <img class = "mainImage" src = "start.png">
+            </div>
+            <!-- PAD -->
+            <div style = "flex-direction: column; flex-grow: 1; gap: 0; display: flex;">
+                <!-- COUNTER -->
+                <div style = "flex-direction: column;">
+                    <p id = "counter"> 00:00 </p>
+                </div>
+                <!-- START BUTTON -->
+                <div style = "flex-direction: column;">
+                    <button class = "btn" id = "start"> START </button>
+                </div>
+
+                <div style = "flex-direction: column;">
+                    <button class = "btn" id = "abort" > ABORT </button>
+                </div>
+                <div style = "flex-direction: row; flex-grow: 1; gap: 0; display: flex; justify-content: center; align-items: center;" class = "travel" id = "reset">
+                        <img id = "pomodoro" onclick = "mission('Pomodoro')" class = "missionImages" src = "pomo.png">
+                        <img id = "break" onclick = "mission('break')" class = "missionImages" src = "break.png">
+                        <img id = "longBreak" onclick = "mission('longBreak')" class = "missionImages" src = "longBreak.png">
+                </div>
+                <script src = "PomoSpace.js"></script>
+            </div>
+
+        </div>
+    </body>
+</html>
